@@ -44,13 +44,13 @@ Built with Kotlin and XML.
     
   
   [![Join Telegram Chat:https://t.me/+h_EZ6QprQss0MDVl](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+h_EZ6QprQss0MDVl)
-  [![Join Discord Server:https://t.me/+h_EZ6QprQss0MDVl](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://t.me/+h_EZ6QprQss0MDVl)
+  [![Join Discord Server:https://t.me/+h_EZ6QprQss0MDVl](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Ugqvvjr34M)
   
 # Special Credits
   
-  [Anshu Pandey](https://github.com/KryptonANSHU)
+  [Anshu Pandey](https://github.com/KryptonANSHU): For helping with discord server
   
-  [Grabster](https://github.com/Grabstertv)
+  [Grabster](https://github.com/Grabstertv): For providing beautiful icons for the app
   
 # Report Issues
 
