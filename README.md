@@ -4,6 +4,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/debz-g/YAWA-YetAnotherWeatherApp?color=red&logo=Github)
 ![GitHub top language](https://img.shields.io/github/languages/top/debz-g/YAWA-YetAnotherWeatherApp?color=violet&logo=kotlin)
 ![GitHub](https://img.shields.io/github/license/debz-g/YAWA-YetAnotherWeatherApp?logo=gitbook&logoColor=yellow)
+![GitHub contributors](https://img.shields.io/github/contributors/debz-g/YAWA-YetAnotherWeatherApp?logo=github&logoColor=red)
 
 YAWA is a simple single screen, single activity weather app with material UI.
 
