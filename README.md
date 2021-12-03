@@ -36,6 +36,8 @@ Built with Kotlin and XML.
   • Create a pull request for your code and wait for us to review your code and merge.
 
 
+## Download the logo from [here](https://drive.google.com/file/d/1gb-Qt80d4HvHv1TWYDeKs0BIHZf32Ar6/view?usp=sharing)
+
 # Get involved
 
 ## ❤️ Community
@@ -44,6 +46,11 @@ Built with Kotlin and XML.
   [![Join Telegram Chat:https://t.me/+h_EZ6QprQss0MDVl](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+h_EZ6QprQss0MDVl)
   [![Join Discord Server:https://t.me/+h_EZ6QprQss0MDVl](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://t.me/+h_EZ6QprQss0MDVl)
   
+# Special Credits
+  
+  [Anshu Pandey](https://github.com/KryptonANSHU)
+  
+  [Grabster](https://github.com/Grabstertv)
   
 # Report Issues
 
