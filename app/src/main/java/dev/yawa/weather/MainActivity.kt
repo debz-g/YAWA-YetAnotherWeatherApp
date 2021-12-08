@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
     private var reqCode = 1010
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar!!.hide()
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
