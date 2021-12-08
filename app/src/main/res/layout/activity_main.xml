@@ -45,7 +45,7 @@
                     android:layout_height="90dp"
                     android:layout_marginEnd="152dp"
                     android:background="@color/white"
-                    android:text="55°"
+                    android:text="@string/_55"
                     android:textAlignment="center"
                     android:textColor="#2B2B2B"
                     android:textSize="60sp"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@color/white"
-                android:text="New York City, NY"
+                android:text="@string/new_york_city_ny"
                 android:textAlignment="center"
                 android:textColor="#2B2B2B"
                 android:textStyle="bold" />
@@ -97,8 +97,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingLeft="25dp"
-                android:paddingRight="20dp">
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp">
 
                 <ImageView
                     android:id="@+id/humidityImage"
@@ -107,7 +107,8 @@
                     android:src="@drawable/ic_weather_icons_61"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    tools:targetApi="p" />
+                    tools:targetApi="p"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -115,14 +116,15 @@
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    android:paddingLeft="10dp">
+                    android:paddingStart="10dp"
+                    tools:targetApi="p">
 
                     <TextView
                         android:id="@+id/humidityText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="Humidity"
+                        android:text="@string/humidity"
                         android:textColor="#051A45"
                         android:textColorLink="#0D3D91"
                         android:textSize="16sp" />
@@ -131,9 +133,9 @@
                         android:id="@+id/humidityPercentage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="85%"
+                        android:text="@string/_85"
                         android:textColor="#2B2B2B"
-                        android:textSize="17dp" />
+                        android:textSize="17sp" />
                 </LinearLayout>
 
 
@@ -158,8 +160,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="5dp">
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp">
 
                 <ImageView
                     android:id="@+id/uvImage"
@@ -168,7 +170,8 @@
                     android:src="@drawable/ic_weather_icons_57"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    tools:targetApi="p" />
+                    tools:targetApi="p"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -176,16 +179,17 @@
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    android:paddingLeft="10dp">
+                    android:paddingStart="10dp"
+                    tools:targetApi="p">
 
                     <TextView
                         android:id="@+id/windText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="Wind Speed"
+                        android:text="@string/wind_speed"
                         android:textColor="#0C1D8C"
-                        android:textSize="15dp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/uvValue"
@@ -193,7 +197,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/_10_km_h"
                         android:textColor="#2B2B2B"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
                 </LinearLayout>
 
 
@@ -225,8 +229,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingLeft="25dp"
-                android:paddingRight="20dp">
+                android:paddingStart="25dp"
+                android:paddingEnd="20dp">
 
                 <ImageView
                     android:id="@+id/sunriseImage"
@@ -234,7 +238,9 @@
                     android:layout_height="40dp"
                     android:src="@drawable/ic_weather_icons_03"
                     android:outlineAmbientShadowColor="#00FFFFFF"
-                    android:outlineSpotShadowColor="#00FFFFFF" />
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    tools:targetApi="p"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -242,24 +248,25 @@
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    android:paddingLeft="10dp">
+                    android:paddingStart="10dp"
+                    tools:targetApi="p">
 
                     <TextView
                         android:id="@+id/sunriseText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="Sunrise"
+                        android:text="@string/sunrise"
                         android:textColor="#DC2100"
-                        android:textSize="16dp" />
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/sunriseTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="hh:mm"
+                        android:text="@string/hh_mm"
                         android:textColor="#2B2B2B"
-                        android:textSize="19dp" />
+                        android:textSize="19sp" />
                 </LinearLayout>
 
 
@@ -284,8 +291,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="10dp">
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
 
                 <ImageView
                     android:id="@+id/sunsetImage"
@@ -293,7 +300,9 @@
                     android:layout_height="50dp"
                     android:src="@drawable/ic_weather_icons_04"
                     android:outlineAmbientShadowColor="#00FFFFFF"
-                    android:outlineSpotShadowColor="#00FFFFFF" />
+                    android:outlineSpotShadowColor="#00FFFFFF"
+                    tools:targetApi="p"
+                    android:contentDescription="@string/todo" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -301,7 +310,8 @@
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    android:paddingLeft="10dp">
+                    android:paddingStart="10dp"
+                    tools:targetApi="p">
 
                     <TextView
                         android:id="@+id/sunsetText"
