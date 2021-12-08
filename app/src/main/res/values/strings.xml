@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">YAWA-YetAnotherWeatherApp</string>
+    <string name="_10_km_h">10 Km/h</string>
+    <string name="todo">TODO</string>
+    <string name="sunset">Sunset</string>
+    <string name="hh_mm">hh:mm</string>
+    <string name="rainy_to_partly_cloudy">Rainy to partly cloudy.</string>
+
+    <string name="sunrise">Sunrise</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="_85">85%</string>
+
+    <string name="new_york_city_ny">New York City, NY</string>
+
+    <string name="_55">55°</string>
+
 </resources>
