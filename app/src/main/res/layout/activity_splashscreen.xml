@@ -5,30 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="#C9E0F3"
+    android:background="@color/white"
     tools:context=".splashscreen">
+
+    <!--    app:layout_constrainedVertical_bias="0.1"-->
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="112dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="128dp"
+        android:layout_width="138dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="140dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_smart" />
+        app:srcCompat="@drawable/ic_couple" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="105dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/amaranth"
         android:text="YAWA"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -37,14 +39,26 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:fontFamily="@font/aladin"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/amaranth"
         android:text="Yet Another Weather App"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@android:color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splashrain" />
 </androidx.constraintlayout.widget.ConstraintLayout>

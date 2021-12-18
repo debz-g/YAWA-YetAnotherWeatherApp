@@ -93,41 +93,44 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingStart="25dp"
-                android:paddingEnd="20dp">
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp">
 
                 <ImageView
                     android:id="@+id/humidityImage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_weather_icons_61"
+                    android:contentDescription="@string/todo"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    tools:targetApi="p"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_weather_icons_61"
+                    tools:targetApi="p" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_width="91dp"
+                    android:layout_height="47dp"
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
                     android:paddingStart="10dp"
+                    tools:paddingTop="10dp"
                     tools:targetApi="p">
 
                     <TextView
                         android:id="@+id/humidityText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
+                        android:layout_marginBottom="0dp"
                         android:text="@string/humidity"
+                        android:textAlignment="center"
                         android:textColor="#051A45"
                         android:textColorLink="#0D3D91"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        tools:layout_marginTop="5dp" />
 
                     <TextView
                         android:id="@+id/humidityPercentage"
@@ -156,26 +159,26 @@
             app:layout_constraintStart_toEndOf="@+id/humidity">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:paddingVertical="30dp"
-                android:paddingStart="15dp"
-                android:paddingEnd="5dp">
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
 
                 <ImageView
                     android:id="@+id/uvImage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/ic_weather_icons_57"
+                    android:contentDescription="@string/todo"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
-                    tools:targetApi="p"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_weather_icons_57"
+                    tools:targetApi="p" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:outlineAmbientShadowColor="#00FFFFFF"
                     android:outlineSpotShadowColor="#00FFFFFF"
@@ -186,10 +189,10 @@
                         android:id="@+id/windText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
                         android:text="@string/wind_speed"
                         android:textColor="#0C1D8C"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        tools:layout_marginTop="17dp" />
 
                     <TextView
                         android:id="@+id/uvValue"
@@ -210,7 +213,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.83" />
+            app:layout_constraintGuide_percent="0.82" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/sunrise"
