@@ -12,8 +12,10 @@ import android.location.LocationRequest
 import android.os.Looper
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.location.LocationManagerCompat.isLocationEnabled
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
@@ -24,8 +26,10 @@ private lateinit var binding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var mfusedlocation: FusedLocationProviderClient
+    lateinit var locationRequest: LocationRequest
     private var reqCode = 1010
 
+    @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -39,6 +43,11 @@ class MainActivity : AppCompatActivity() {
             getLastLocation()
         }
 
+        val swipe: SwipeRefreshLayout =findViewById(R.id.swiperefresh)
+        swipe.setOnRefreshListener {
+            newLocation()
+            swipe.isRefreshing=false
+        }
     }
 
     private fun getLastLocation() {
@@ -48,11 +57,13 @@ class MainActivity : AppCompatActivity() {
                     var location: Location? = task.result
                     if (location == null) {
                         newLocation()
-                    } else {
+                    }
+                    else {
                         Log.i("Location", location.longitude.toString())
                     }
                 }
-            } else {
+            }
+            else {
                 Toast.makeText(this, "Please Turn on GPS from settings", Toast.LENGTH_SHORT).show()
             }
         } else

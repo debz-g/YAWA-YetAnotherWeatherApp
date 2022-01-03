@@ -28,9 +28,5 @@ public class IntroductoryActivity extends AppCompatActivity {
         yawa.animate().translationX(1400).setDuration(900).setStartDelay(4000);
         fullform.animate().translationX(-1500).setDuration(900).setStartDelay(4000);
         lottieAnimationView.animate().translationY(-1500).setDuration(900).setStartDelay(4000);
-
-
-
-
     }
 }
